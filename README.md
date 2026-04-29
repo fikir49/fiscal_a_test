@@ -1,20 +1,20 @@
-# Fiscal-A: Next-Gen Financial Intelligence Vault 🚀
+# Fiscal-A: Next-Gen Financial Intelligence Vault 
 
 Fiscal-A is a high-performance, privacy-focused financial management system built with Flutter. It combines cutting-edge AI, Computer Vision, and biometric security to transform how users track, analyze, and protect their financial life.
 
-## ✨ Key Features
+##  Key Features
 
-### 🛡️ The Financial Vault (Security)
+###  The Financial Vault (Security)
 *   **Biometric Hardening:** Access to sensitive financial data is strictly protected via `local_auth` (Fingerprint/FaceID).
 *   **Privacy-First UI:** Real-time data blurring (Glassmorphism) ensures that your balances are hidden from prying eyes until you are verified.
 *   **Local Persistence:** Powered by a high-speed NoSQL Hive database. Your data never leaves your device.
 
-### 🤖 Fiscal Buddy (AI Advisor)
+###  Fiscal Buddy (AI Advisor)
 *   **Context-Aware Intelligence:** Integrated with **Gemini 2.5 Flash** to provide real-time, personalized financial advice.
 *   **Live Data Grounding:** The AI knows your ledger and current market rates, giving you accurate, data-driven insights.
 *   **Asynchronous Streaming:** Instant responses with token-by-token text generation.
 
-### 👁️ Computer Vision (AI Scanner)
+###  Computer Vision (AI Scanner)
 *   **OCR Integration:** Uses **Google ML Kit** to scan physical receipts and documents.
 *   **Smart Parsing:** Automatically extracts amounts and descriptions, eliminating manual data entry errors.
 
@@ -22,17 +22,17 @@ Fiscal-A is a high-performance, privacy-focused financial management system buil
 *   **Real-Time Pipeline:** Live ETB/USD exchange rates and global market indices.
 *   **Direct News Ticker:** Curated financial headlines from trusted global and Ethiopian sources (Addis Insight, Reuters) with direct-to-web links.
 
-### 📊 Predictive Analytics
+###  Predictive Analytics
 *   **Burn Rate Forecasting:** Advanced time-series analysis to predict your monthly spending velocity and keep you on budget.
 
-## 🏗️ Architecture
+##  Architecture
 *   **Frontend:** Flutter (Dart)
 *   **Intelligence:** Google Gemini 2.5 & Google ML Kit
 *   **Database:** Hive (NoSQL)
 *   **State Management:** Reactive setState with local persistence synchronization.
 *   **Middleware Ready:** Architected for seamless migration to Serverless (Firebase/Node.js) backends.
 
-## 🚀 Getting Started
+##  Getting Started
 
 1.  **Build the App:**
     ```bash
@@ -44,7 +44,7 @@ Fiscal-A is a high-performance, privacy-focused financial management system buil
     flutter pub run flutter_launcher_icons
     ```
 
-## ⚖️ License
+##  License
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
