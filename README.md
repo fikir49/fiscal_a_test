@@ -49,17 +49,20 @@ Fiscal-A is a high-performance, privacy-focused financial management system buil
 ### Prerequisites
 *   Flutter SDK (Stable channel)
 *   Android SDK / Xcode
+*   **Gemini API Key:** Required for the AI Financial Advisor. Obtain one from [Google AI Studio](https://aistudio.google.com/).
 
 ### Installation
 1.  **Clone the repository and fetch dependencies:**
     ```bash
     flutter pub get
     ```
-2.  **Generate platform-specific branding:**
+2.  **Configure API Key:**
+    Open `lib/main.dart` and locate the `apiKey` constant within the `_askTheExpert` method. Replace the placeholder string with your valid Gemini API key.
+3.  **Generate platform-specific branding:**
     ```bash
     flutter pub run flutter_launcher_icons
     ```
-3.  **Execute a Release Build:**
+4.  **Execute a Release Build:**
     ```bash
     flutter build apk --release
     ```
