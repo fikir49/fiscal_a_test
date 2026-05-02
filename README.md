@@ -60,7 +60,7 @@ Fiscal-A is a high-performance, privacy-focused financial management system buil
     Open `lib/main.dart` and locate the `apiKey` constant within the `_askTheExpert` method. Replace the placeholder string with your valid Gemini API key.
 3.  **Generate platform-specific branding:**
     ```bash
-    flutter pub run flutter_launcher_icons
+    flutter pub run flutter_launcher_icons 
     ```
 4.  **Execute a Release Build:**
     ```bash
@@ -86,4 +86,4 @@ Distributed under the MIT License. See `LICENSE` for further details.
 *   **Roadmap:** Implementation of a Distributed Serverless Middleware (Firebase Cloud Functions) to facilitate multi-device synchronization and secure API request queuing.
 
 ---
-**Built by Hp Zbook** - *Excellence in Financial Intelligence.*
+Built by  Fikir wendmnew  - *Excellence in Financial Intelligence.*
