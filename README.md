@@ -47,5 +47,17 @@ Fiscal-A is a high-performance, privacy-focused financial management system buil
 ##  License
 Distributed under the MIT License. See `LICENSE` for more information.
 
+### 📈 Market & Strategic Vision
+*   **Target Audience:** Individual investors, small business owners, and students in Ethiopia's emerging digital economy.
+*   **Problem Solved:** High financial fragmentation and asset-tracking opacity.
+*   **Strategic Impact:** Providing "Privacy-First" banking-grade tools that operate independently of centralized servers, giving users total control over their data.
+
+### 🏗️ Infrastructure & Scalability
+*   **Current State:** Fully functional edge-device application (Local-first).
+*   **Future Roadmap:** Migration to a **Distributed Serverless Middleware** (Firebase Cloud Functions) to support:
+    *   Multi-device synchronization.
+    *   API Key rotation and request queuing.
+    *   Collaborative financial vaults.
+
 ---
-**Built by [Your Name]** - *A Smart Financial Information System.*
+**Built by Hp Zbook** - *Excellence in Financial Intelligence.*
