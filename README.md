@@ -86,4 +86,4 @@ Distributed under the MIT License. See `LICENSE` for further details.
 *   **Roadmap:** Implementation of a Distributed Serverless Middleware (Firebase Cloud Functions) to facilitate multi-device synchronization and secure API request queuing.
 
 ---
-Built by Fikir Wendmnew - *Excellence in Financial Intelligence.*
+Built by Fikir Wendmnew 
