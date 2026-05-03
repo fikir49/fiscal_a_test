@@ -29,8 +29,8 @@ class FiscalEntry {
   };
 
   factory FiscalEntry.fromMap(Map<dynamic, dynamic> map) => FiscalEntry(
-    id: map['id'], title: map['title'], amount: map['amount'],
-    type: map['type'], tax: map['tax'], date: map['date'],
+    id: map['id'], title: map['title'], amount: map['amount']?.toDouble() ?? 0.0,
+    type: map['type'], tax: map['tax']?.toDouble() ?? 0.0, date: map['date'],
     isArchived: map['isArchived'] ?? false,
   );
 }
@@ -108,7 +108,7 @@ class _DashboardState extends State<Dashboard> {
   Future<void> _fetchRealNews() async {
     try {
       // Using a more reliable query for financial news relevant to Ethiopia and Global Markets
-      final response = await http.get(Uri.parse('https://api.marketaux.com/v1/news/all?symbols=TSLA,AMZN,MSFT&filter_entities=true&limit=5&api_token=P0vR7I7O7uY6X1V6x7p0vR7I7O7uY6X1V6x7'));
+      final response = await http.get(Uri.parse('https://api.marketaux.com/v1/news/all?symbols=TSLA,AMZN,MSFT&filter_entities=true&limit=5&api_token=YOUR_MARKETAUX_API_TOKEN_HERE'));
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
         setState(() => _realNews = data['data'] ?? []);
@@ -192,7 +192,7 @@ class _DashboardState extends State<Dashboard> {
         "PROTOCOLS: 1. Focus on money and assets. 2. Friendly, natural conversation style. 3. Plain text only. 4. Concise.";
 
     final model = GenerativeModel(
-      model: 'gemini-2.5-flash',
+      model: 'gemini-1.5-flash',
       apiKey: apiKey,
     );
 
