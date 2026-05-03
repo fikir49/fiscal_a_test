@@ -172,13 +172,8 @@ class _DashboardState extends State<Dashboard> {
   Future<void> _askTheExpert(String userPrompt, Function setChatState) async {
     // SECURITY NOTE: The Gemini API key is intentionally omitted from source control.
     // To enable the advisor, insert your API key from Google AI Studio below.
-    const apiKey = "YOUR API_KEY_HERE";
+    const apiKey = "YOUR-API-KEY";
     
-    if (apiKey == "YOUR_API_KEY_HERE") {
-      setChatState(() => _chatMessages.add({"role": "AI", "msg": "ADVISOR OFFLINE: Gemini API Key not found. Please configure the key in main.dart to enable live financial insights."}));
-      return;
-    }
-
     final activeLedger = _ledger.where((e) => !e.isArchived).toList();
     final ledgerData = activeLedger.map((e) => "${e.title}: ${e.amount} ETB (${e.type})").join(", ");
     
